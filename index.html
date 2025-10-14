@@ -7,11 +7,23 @@
   </head>
   <body>
     <a-scene>
+      <a-scene fog="type: linear; color: #000"></a-scene>
       <a-assets>
       <a-asset-item id="DangerSign" src="assets/DangerSign.glb"></a-asset-item>
       </a-assets>
-      <a-entity gltf-model="assets/DangerSign.glb" position="0 0 0"> </a-entity>
-      <a-camera> </a-camera>
+      <a-entity gltf-model="assets/DangerSign.glb" position="0 0.80981 0"> </a-entity>
+
+      <a-asset-item id="grass" src="assets/grass.glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="assets/grass.glb" position="0.7468 -0.04531 0" scale="5 1.48 5"> </a-entity>
+
+      <a-asset-item id="computer" src="assets/computer.glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="assets/computer.glb" position="1.43652 0.07915 0.40755" rotation="0 -50 0"> </a-entity>
+
+     
+
+      <a-camera position="0.90743 1.6 3.8327" rotation="-7.104676659622209 -1.0313240312354812 0"> </a-camera>
     </a-scene>
   </body>
 </html>
