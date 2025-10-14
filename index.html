@@ -6,7 +6,7 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-     <a-scene fog="type: exponential; color: #1D6E5A; near: 5; far: 5 ; density: 0.4">
+     <a-scene fog="type: exponential; color: #1D6E5A; near: 5; far: 5 ; density: 0.3">
       <a-assets>
         <a-asset-item id="mushroom" src="assets/mushroom.glb"></a-asset-item>
         <a-asset-item id="computer" src="assets/computer.glb"></a-asset-item>
@@ -15,7 +15,7 @@
       </a-assets>
 
       <!-- Entités référencées avec leurs identifiants -->
-      <a-entity scale="1.5 1.5 1.5">
+      <a-entity scale="1.5 1.5 1.5" position="-0.970 0.360 -2.096">
       <a-entity gltf-model="#mushroom" position="1.32905 1.38639 -1.01023" scale="0.01 0.01 0.01" rotation="0 90 0"></a-entity>
       <a-entity gltf-model="#mushroom" position="0.86165 0.2964 -0.10582" scale="0.002 0.002 0.002" rotation="0 110 0"></a-entity>
       <a-entity gltf-model="assets/mushroom.glb" position="1.48001 0.16639 0.8801" scale="0.001 0.001 0.001" rotation="0 110 0"></a-entity>
@@ -40,7 +40,7 @@
       <a-sky color="#2E3B29"></a-sky>
 
       <!-- Caméra -->
-      <a-camera position="0.90743 0.35578 4.05593"></a-camera>
+      <a-camera position="0.0871 1.03358 1.17055"></a-camera>
 
     </a-scene>
   </body>
