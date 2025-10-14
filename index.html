@@ -6,33 +6,38 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-     <a-scene fog="type: linear; color: #1D6E5A; near: 2; far: 6">
+     <a-scene fog="type: linear; color: #1D6E5A; near: 2; far: 3.5">
       <a-assets>
-        <a-asset-item id="DangerSign" src="assets/DangerSign.glb"></a-asset-item>
         <a-asset-item id="mushroom" src="assets/mushroom.glb"></a-asset-item>
         <a-asset-item id="computer" src="assets/computer.glb"></a-asset-item>
-        <a-asset-item id="cones" src="assets/cones.glb"></a-asset-item>
+        <a-asset-item id="brownmush" src="assets/brownmush.glb"></a-asset-item>
+        <a-asset-item id="grass" src="assets/grass.glb"></a-asset-item>
       </a-assets>
 
       <!-- Entités référencées avec leurs identifiants -->
-      <a-entity gltf-model="#DangerSign" position="0 0.80981 0"></a-entity>
       <a-entity gltf-model="#mushroom" position="1.32905 1.38639 -1.01023" scale="0.01 0.01 0.01" rotation="0 90 0"></a-entity>
-      <a-entity gltf-model="assets/mushroom.glb" position="0.86165 0.2964 -0.10582" scale="0.002 0.002 0.002" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#mushroom" position="0.86165 0.2964 -0.10582" scale="0.002 0.002 0.002" rotation="0 110 0"></a-entity>
       <a-entity gltf-model="#computer" position="1.43652 0.07915 0.40755" rotation="0 -50 0"></a-entity>
-      <a-entity gltf-model="#cones" position="0.5274 0.07915 -0.53739" rotation="0 -50 0" scale="0.008 0.008 0.008"></a-entity>
+      <a-entity gltf-model="#computer" position="0.01981 0.07915 -0.21227" rotation="0 20 0" scale="0.7 0.7 0.7"></a-entity>
+      <a-entity gltf-model="#computer" position="0.61454 0.07915 -1.01656" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity gltf-model="#brownmush" position="0.00689 0.38904 -0.76347" scale="5 5 5" rotation="0 110 0"></a-entity>
+      <a-entity gltf-model="assets/brownmush.glb" position="0.74467 1.08956 -1.8409" scale="15 15 15" rotation="0 110 0"></a-entity>
+      <a-entity gltf-model="assets/grass.glb" position="0.94309 0.0362 -1.31919" scale="2 0.7 2" rotation="0 90 0"></a-entity>
 
-      <!-- Bloc -->
-      <a-plane color="#CCC" height="20" width="20" material="color: #155446" position="-0.09445 -0.06348 0" scale="1.03 0.91 0.51" rotation="-90 0 0"></a-plane>
+      <!-- Sol -->
+      <a-plane height="20" width="20"  material="color: #155446; roughness: 1; metalness: 0"   position="-0.09445 0.03665 0" scale="1.03 0.91 0.51" rotation="-90 0 0"></a-plane>
 
       <!-- Lumières -->
       <a-entity light="color: #88b481; intensity: 5; type: ambient" position="0 -0.14091 0"></a-entity> 
-      <a-entity light="color: #ff2d2d; intensity: 2.09; type: point" position="1.24704 0.41071 0.56699"></a-entity>
+      <a-entity light="color: #ff2d2d; intensity: 3; type: point" position="1.24704 0.41071 0.56699"></a-entity>
+      <a-entity light="color: #ff2d2d; intensity: 3; type: point" position="0.08727 0.32728 -0.01799"></a-entity>
+      <a-entity light="color: #ff2d2d; decay: 1.55; intensity: 1.95; type: point" position="0.61337 0.24358 -0.90512"></a-entity>
      
       <!-- Ciel -->
       <a-sky color="#2E3B29"></a-sky>
 
       <!-- Caméra -->
-      <a-camera position="0.90743 1.24187 3.8327" rotation="-7.104676659622208 0.11459155902616505 0"></a-camera>
+      <a-camera position="0.90743 0.65019 1.96714"></a-camera>
 
     </a-scene>
   </body>
