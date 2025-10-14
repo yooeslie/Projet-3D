@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Frame Scene 2</title>
+
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="0 2 -5" rotation="0 45 45"></a-box>
+
+      <a-entity
+        text="value: Hello, A-Frame; color: #FAFAFA; width: 5; anchor: align"
+        position="-0.9 0.2 -3"
+        scale="1 1 1"
+      ></a-entity>
+      <a-entity camera look-controls position="0 1.6 0">
+        <a-cursor></a-cursor>
+      </a-entity>
+
+      <!-- Out of the box environment! -->
+      <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
+         threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
+      <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
+      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+    </a-scene>
+  </body>
+</html>
